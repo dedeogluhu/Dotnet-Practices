@@ -4,24 +4,24 @@ Practising c# by building apps.
 
 RoadMap 
 
--> Console apps with .net Framework ==> Understanding OOP
+-> **Console apps with .net Framework** ==> *Understanding OOP*
 
--> Data Access and ADO.NET ==> Understanding and using Data Access Methods
+-> **Data Access and ADO.NET** ==> *Understanding and using Data Access Methods*
 
--> Entity Framework
+-> **Entity Framework**
 
--> Winforms ==> Working with UI and UI design
+-> **Winforms** ==> *Working with UI and UI design*
 
--> Wpf and xaml ==> Xaml and GPU Performance in apps
+-> **Wpf and xaml** ==> *Xaml and GPU Performance in apps*
 
--> Mobile Dev. with Xamarin ==> Understanding Mobile Development
+-> **Mobile Dev. with Xamarin** ==> *Understanding Mobile Development*
 
--> Learning a bit of UWP(?)
+-> **Learning a bit of UWP(?)**
 
--> ASP.NET and Javascript on the road to web dev. ==> Understanding Web Development
+-> **ASP.NET and Javascript on the road to web dev.** ==> *Understanding Web Development*
 
--> Learning .Net Core and starting developing with it ==> .Net Core and Performance
+-> **Learning .Net Core and starting developing with it** ==> *.Net Core and Performance*
 
--> .Net Standart
+-> **.Net Standart**
 
--> .Net 5.0
+-> **.Net 5.0**
