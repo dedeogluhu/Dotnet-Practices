@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFConsoleBankAppDemo", "..\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppDemo_BankApp", "..\ConsoleAppDemo_BankApp\ConsoleAppDemo_BankApp.csproj", "{36AF3F18-732E-41CE-A00B-F414138C94FC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreAppWithConsole", "..\StoreAppWithConsole\StoreAppWithConsole.csproj", "{BC069571-D951-4981-BC77-DB374F6AE176}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{36AF3F18-732E-41CE-A00B-F414138C94FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36AF3F18-732E-41CE-A00B-F414138C94FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36AF3F18-732E-41CE-A00B-F414138C94FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC069571-D951-4981-BC77-DB374F6AE176}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC069571-D951-4981-BC77-DB374F6AE176}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC069571-D951-4981-BC77-DB374F6AE176}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC069571-D951-4981-BC77-DB374F6AE176}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
