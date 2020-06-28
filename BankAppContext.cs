@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data.Entity;
 
 namespace EntityFrameworkDemo
 {
-    public class BankAppContext:DbContext
+    public class BankAppContext : DbContext
     {
         public DbSet<Product> Products { get; set; }
     }

@@ -1,12 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Data.Entity.ModelConfiguration.Configuration;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace EntityFrameworkDemo
@@ -37,7 +29,7 @@ namespace EntityFrameworkDemo
                 Name = tbxProductName.Text,
                 UnitPrice = Convert.ToDecimal(tbxUnitPrice.Text),
                 StockAmount = Convert.ToInt32(tbxStockAmount.Text)
-            }) ;
+            });
             LoadProducts();
             MessageBox.Show("Product Added");
         }
@@ -57,7 +49,7 @@ namespace EntityFrameworkDemo
 
         private void btnRemoveProduct_Click(object sender, EventArgs e)
         {
-            _productDal.Remove(new Product 
+            _productDal.Remove(new Product
             {
                 Id = Convert.ToInt32(dgwProducts.CurrentRow.Cells[0].Value)
             });
