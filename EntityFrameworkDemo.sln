@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreAppWithConsole", "..\S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleRpgProject", "..\ConsoleRpgProject\ConsoleRpgProject.csproj", "{6767FD38-4CF4-440B-8DE1-10B5EC56B32E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ado.Net_Demo", "..\Ado.Net_Demo\Ado.Net_Demo.csproj", "{B81A192C-83BC-4005-8879-80626030D069}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{6767FD38-4CF4-440B-8DE1-10B5EC56B32E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6767FD38-4CF4-440B-8DE1-10B5EC56B32E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6767FD38-4CF4-440B-8DE1-10B5EC56B32E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B81A192C-83BC-4005-8879-80626030D069}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B81A192C-83BC-4005-8879-80626030D069}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B81A192C-83BC-4005-8879-80626030D069}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B81A192C-83BC-4005-8879-80626030D069}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
