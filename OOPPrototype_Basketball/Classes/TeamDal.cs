@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOPPrototype_Basketball.Enums
+namespace OOPPrototype_Basketball.Classes
 {
-    public enum Conference
+    public static class TeamDal
     {
-        East,
-        West
+        public static List<Team> Teams { get; set; }
     }
 }

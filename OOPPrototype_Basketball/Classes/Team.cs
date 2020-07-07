@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace OOPPrototype_Basketball.Classes
 {
-    class Team
+    public class Team
     {
         public string Name { get; set; }
         public string Stadium { get; set; }

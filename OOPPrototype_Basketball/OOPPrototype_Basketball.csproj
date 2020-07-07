@@ -51,6 +51,7 @@
     <Compile Include="Classes\ShootingGuard.cs" />
     <Compile Include="Classes\SmallForward.cs" />
     <Compile Include="Classes\Team.cs" />
+    <Compile Include="Classes\TeamDal.cs" />
     <Compile Include="Enums\Enums.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

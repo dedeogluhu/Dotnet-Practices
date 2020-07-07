@@ -34,6 +34,7 @@
             this.btnShootThree = new System.Windows.Forms.Button();
             this.btnDunk = new System.Windows.Forms.Button();
             this.btnRebaund = new System.Windows.Forms.Button();
+            this.Teams = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // Players
@@ -96,11 +97,21 @@
             this.btnRebaund.UseVisualStyleBackColor = true;
             this.btnRebaund.Click += new System.EventHandler(this.btnRebaund_Click);
             // 
+            // Teams
+            // 
+            this.Teams.FormattingEnabled = true;
+            this.Teams.ItemHeight = 16;
+            this.Teams.Location = new System.Drawing.Point(603, 12);
+            this.Teams.Name = "Teams";
+            this.Teams.Size = new System.Drawing.Size(392, 340);
+            this.Teams.TabIndex = 6;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(664, 423);
+            this.ClientSize = new System.Drawing.Size(1007, 424);
+            this.Controls.Add(this.Teams);
             this.Controls.Add(this.btnRebaund);
             this.Controls.Add(this.btnDunk);
             this.Controls.Add(this.btnShootThree);
@@ -122,6 +133,7 @@
         private System.Windows.Forms.Button btnShootThree;
         private System.Windows.Forms.Button btnDunk;
         private System.Windows.Forms.Button btnRebaund;
+        private System.Windows.Forms.ListBox Teams;
     }
 }
 
