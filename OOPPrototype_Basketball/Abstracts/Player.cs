@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOPPrototype_Basketball
 {
-    public abstract class Player
+    public class Player
     {
         public string Name { get; set; }
         public int Age { get; set; }

@@ -42,8 +42,9 @@
             this.Players.ItemHeight = 16;
             this.Players.Location = new System.Drawing.Point(12, 12);
             this.Players.Name = "Players";
-            this.Players.Size = new System.Drawing.Size(392, 564);
+            this.Players.Size = new System.Drawing.Size(392, 340);
             this.Players.TabIndex = 0;
+            this.Players.SelectedIndexChanged += new System.EventHandler(this.Players_SelectedIndexChanged);
             // 
             // btnShoot
             // 
@@ -53,6 +54,7 @@
             this.btnShoot.TabIndex = 1;
             this.btnShoot.Text = "Shoot";
             this.btnShoot.UseVisualStyleBackColor = true;
+            this.btnShoot.Click += new System.EventHandler(this.btnShoot_Click);
             // 
             // btnLayup
             // 
@@ -62,6 +64,7 @@
             this.btnLayup.TabIndex = 2;
             this.btnLayup.Text = "Layup";
             this.btnLayup.UseVisualStyleBackColor = true;
+            this.btnLayup.Click += new System.EventHandler(this.btnLayup_Click);
             // 
             // btnShootThree
             // 
@@ -71,6 +74,7 @@
             this.btnShootThree.TabIndex = 3;
             this.btnShootThree.Text = "ShootThreePointer";
             this.btnShootThree.UseVisualStyleBackColor = true;
+            this.btnShootThree.Click += new System.EventHandler(this.btnShootThree_Click);
             // 
             // btnDunk
             // 
@@ -80,6 +84,7 @@
             this.btnDunk.TabIndex = 4;
             this.btnDunk.Text = "Dunk";
             this.btnDunk.UseVisualStyleBackColor = true;
+            this.btnDunk.Click += new System.EventHandler(this.btnDunk_Click);
             // 
             // btnRebaund
             // 
@@ -89,12 +94,13 @@
             this.btnRebaund.TabIndex = 5;
             this.btnRebaund.Text = "Rebaund";
             this.btnRebaund.UseVisualStyleBackColor = true;
+            this.btnRebaund.Click += new System.EventHandler(this.btnRebaund_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(664, 591);
+            this.ClientSize = new System.Drawing.Size(664, 423);
             this.Controls.Add(this.btnRebaund);
             this.Controls.Add(this.btnDunk);
             this.Controls.Add(this.btnShootThree);
