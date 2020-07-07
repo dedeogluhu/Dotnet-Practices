@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ado.NetDemoWithConsole", ".
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPPrototype_Rpg", "..\OOPPrototype_Rpg\OOPPrototype_Rpg.csproj", "{A9570B89-1EA8-4F8A-91B8-D7A7A19AA491}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPPrototype_Basketball", "..\OOPPrototype_Basketball\OOPPrototype_Basketball.csproj", "{9111E523-1CED-4AC8-B043-8E256E2B4DD1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{A9570B89-1EA8-4F8A-91B8-D7A7A19AA491}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9570B89-1EA8-4F8A-91B8-D7A7A19AA491}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9570B89-1EA8-4F8A-91B8-D7A7A19AA491}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9111E523-1CED-4AC8-B043-8E256E2B4DD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9111E523-1CED-4AC8-B043-8E256E2B4DD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9111E523-1CED-4AC8-B043-8E256E2B4DD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9111E523-1CED-4AC8-B043-8E256E2B4DD1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
