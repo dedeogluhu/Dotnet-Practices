@@ -3,12 +3,6 @@ using OOPPrototype_Basketball.Enums;
 using OOPPrototype_Basketball.Interfaces;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace OOPPrototype_Basketball
@@ -52,13 +46,11 @@ namespace OOPPrototype_Basketball
                 Teams.Items.Add(item.Name);
             }
 
-            
-
-            Players.Items.Add($"{_stephenCurry.Name} - {_stephenCurry.Age} - {_stephenCurry.GetType().Name}");
-            Players.Items.Add($"{_klayThompshon.Name} - {_klayThompshon.Age} - {_klayThompshon.GetType().Name}");
-            Players.Items.Add($"{_andrewWiggins.Name} - {_andrewWiggins.Age} - {_andrewWiggins.GetType().Name}");
-            Players.Items.Add($"{_draymondGreen.Name} - {_draymondGreen.Age} - {_draymondGreen.GetType().Name}");
-            Players.Items.Add($"{_willieCauleyStein.Name} - {_willieCauleyStein.Age} - {_willieCauleyStein.GetType().Name}");
+            Players.Items.Add(_stephenCurry);
+            Players.Items.Add(_klayThompshon);
+            Players.Items.Add(_andrewWiggins);
+            Players.Items.Add(_draymondGreen);
+            Players.Items.Add(_willieCauleyStein);
         }
 
                 public void btnShoot_Click(object sender, EventArgs e)
@@ -112,26 +104,7 @@ namespace OOPPrototype_Basketball
 
                 public void Players_SelectedIndexChanged(object sender, EventArgs e)
                 {
-                    switch (Players.SelectedIndex)
-                    {
-                        case 0:
-                            _selected = _stephenCurry;
-                            break;
-                        case 1:
-                            _selected = _klayThompshon;
-                            break;
-                        case 2:
-                            _selected = _andrewWiggins;
-                            break;
-                        case 3:
-                            _selected = _draymondGreen;
-                            break;
-                        case 4:
-                            _selected = _willieCauleyStein;
-                            break;
-                        default:
-                            break;
-                    }
+                    _selected = (Player)Players.SelectedItem;     
                 }
             }
         }

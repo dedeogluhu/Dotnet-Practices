@@ -20,5 +20,10 @@ namespace OOPPrototype_Basketball
         {
             return $"{Name} Does a Layup";
         }
+
+        public override string ToString()
+        {
+            return $"{Name} - {Age} - {GetType().Name}";
+        }
     }
 }
