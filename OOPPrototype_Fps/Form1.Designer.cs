@@ -39,6 +39,7 @@
             this.cbxWeapon = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnAddSoldier = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -149,11 +150,21 @@
             this.btnAddSoldier.UseVisualStyleBackColor = true;
             this.btnAddSoldier.Click += new System.EventHandler(this.btnAddSoldier_Click);
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Location = new System.Drawing.Point(859, 21);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(363, 308);
+            this.listBox1.TabIndex = 6;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(854, 350);
+            this.ClientSize = new System.Drawing.Size(1267, 376);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnShoot);
             this.Controls.Add(this.btnSniper);
@@ -182,6 +193,7 @@
         private System.Windows.Forms.ComboBox cbxWeapon;
         private System.Windows.Forms.TextBox tbxName;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
 

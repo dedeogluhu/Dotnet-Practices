@@ -14,7 +14,23 @@ namespace OOPPrototype_Fps.Classes
         public Weapons Weapon { get; set; }
         public string Shoot()
         {
-            return $"Player {Name} Shoots with {Weapon.Name}";
+            if (Weapon is IBurstDamage)
+            {
+                return $"Player {Name} Bursts His Way Through";
+            }
+            else if (Weapon is IMachineGun)
+            {
+                IMachineGun a = (IMachineGun)Weapon;
+                return "Ratatatatatatata";
+            }
+            else if (Weapon is ISuppressed)
+            {
+                return "Sssshhh";
+            }
+            else
+            {
+                return $"Player {Name} Shoots with {Weapon.Name}";
+            }    
         }
 
         public string Aim()
@@ -29,6 +45,11 @@ namespace OOPPrototype_Fps.Classes
                 return "Aimed";
             }
             
+        }
+
+        public override string ToString()
+        {
+            return $"{Name}-{Health}-{Weapon.Name}";
         }
     }
 }
