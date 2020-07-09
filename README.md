@@ -6,13 +6,15 @@ RoadMap
 
 -> **Console apps with .net Framework** ==> *Understanding OOP*
 
+-> **Winforms** ==> *Working with UI and UI design*
+
+-> **Sql** ==> *Intro to Databases*
+
 -> **Data Access and ADO.NET** ==> *Understanding and using Data Access Methods*
 
 -> **Working with Json Format**
 
 -> **Entity Framework**
-
--> **Winforms** ==> *Working with UI and UI design*
 
 -> **Wpf and xaml** ==> *Xaml and GPU Performance in apps*
 
