@@ -15,5 +15,9 @@ namespace OOPPrototype_Football.Classes
         {
             return $"Playing a Game with {team}";
         }
+        public override string ToString()
+        {
+            return Name;
+        }
     }
 }

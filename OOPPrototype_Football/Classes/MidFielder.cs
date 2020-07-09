@@ -7,16 +7,16 @@ using System.Threading.Tasks;
 
 namespace OOPPrototype_Football.Classes
 {
-    class GoalKeeper : Player, IGoalKeeper
+    class MidFielder : Player, IGameMaker
     {
-        public string CatchBall()
+        public string CreatePosition()
         {
-            return "Catching the Ball";
+            return "Position Created";
         }
 
         public override string Shoot()
         {
-            return "Can't Shoot from Here";
+            return "Bal Shot from Mid Field";
         }
     }
 }

@@ -11,6 +11,14 @@ namespace OOPPrototype_Football.Classes
         public string Name { get; set; }
         public DateTime BirthDate { get; set; }
         public abstract string Shoot();
-        public abstract string Pass();
+        public string Pass()
+        {
+            return "Passed the Ball";
+        }
+
+        public override string ToString()
+        {
+            return $"{Name} - {GetType().Name}";
+        }
     }
 }

@@ -2,21 +2,23 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace OOPPrototype_Football.Classes
 {
-    class GoalKeeper : Player, IGoalKeeper
+    public class Striker : Player, IForward
     {
-        public string CatchBall()
+
+        public string PlayForward()
         {
-            return "Catching the Ball";
+            return "Striking the Goal";
         }
 
         public override string Shoot()
         {
-            return "Can't Shoot from Here";
+            return "Shooting the Ball";
         }
     }
 }
