@@ -133,5 +133,25 @@ namespace OOPPrototype_Football
         {
             MessageBox.Show(_currentTeam.Play(_currentEnemyTeam));
         }
+
+        private void btnAddTeam_Click(object sender, EventArgs e)
+        {
+            List<Player> list = new List<Player>();
+
+            foreach (var item in lbxPlayersToAdd.Items)
+            {
+                list.Add((Player)item);
+            }
+
+            Team team = new Team { Name = tbxTeamName.Text, Players = list, Stadium = tbxStadName.Text };
+
+            lbxTeams.Items.Add(team);
+            lbxEnemyTeam.Items.Add(team);
+        }
+
+        private void btnAddPlayerFromList_Click(object sender, EventArgs e)
+        {
+            lbxPlayersToAdd.Items.Add(lbxPlayers.SelectedItem);
+        }
     }
 }

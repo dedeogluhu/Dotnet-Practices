@@ -39,6 +39,13 @@
             this.cbxPosition = new System.Windows.Forms.ComboBox();
             this.lbxEnemyTeam = new System.Windows.Forms.ListBox();
             this.btnMatch = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tbxTeamName = new System.Windows.Forms.TextBox();
+            this.tbxStadName = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lbxPlayersToAdd = new System.Windows.Forms.ListBox();
+            this.btnAddTeam = new System.Windows.Forms.Button();
+            this.btnAddPlayerFromList = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnShoot
@@ -145,11 +152,79 @@
             this.btnMatch.UseVisualStyleBackColor = true;
             this.btnMatch.Click += new System.EventHandler(this.btnMatch_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(85, 282);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(89, 17);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Team Name:";
+            // 
+            // tbxTeamName
+            // 
+            this.tbxTeamName.Location = new System.Drawing.Point(85, 319);
+            this.tbxTeamName.Name = "tbxTeamName";
+            this.tbxTeamName.Size = new System.Drawing.Size(287, 22);
+            this.tbxTeamName.TabIndex = 12;
+            // 
+            // tbxStadName
+            // 
+            this.tbxStadName.Location = new System.Drawing.Point(85, 400);
+            this.tbxStadName.Name = "tbxStadName";
+            this.tbxStadName.Size = new System.Drawing.Size(287, 22);
+            this.tbxStadName.TabIndex = 14;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(85, 363);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(82, 17);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Stad Name:";
+            // 
+            // lbxPlayersToAdd
+            // 
+            this.lbxPlayersToAdd.FormattingEnabled = true;
+            this.lbxPlayersToAdd.ItemHeight = 16;
+            this.lbxPlayersToAdd.Location = new System.Drawing.Point(12, 451);
+            this.lbxPlayersToAdd.Name = "lbxPlayersToAdd";
+            this.lbxPlayersToAdd.Size = new System.Drawing.Size(287, 116);
+            this.lbxPlayersToAdd.TabIndex = 15;
+            // 
+            // btnAddTeam
+            // 
+            this.btnAddTeam.Location = new System.Drawing.Point(154, 597);
+            this.btnAddTeam.Name = "btnAddTeam";
+            this.btnAddTeam.Size = new System.Drawing.Size(134, 50);
+            this.btnAddTeam.TabIndex = 16;
+            this.btnAddTeam.Text = "Add Team";
+            this.btnAddTeam.UseVisualStyleBackColor = true;
+            this.btnAddTeam.Click += new System.EventHandler(this.btnAddTeam_Click);
+            // 
+            // btnAddPlayerFromList
+            // 
+            this.btnAddPlayerFromList.Location = new System.Drawing.Point(305, 471);
+            this.btnAddPlayerFromList.Name = "btnAddPlayerFromList";
+            this.btnAddPlayerFromList.Size = new System.Drawing.Size(131, 60);
+            this.btnAddPlayerFromList.TabIndex = 17;
+            this.btnAddPlayerFromList.Text = "Add From Players List";
+            this.btnAddPlayerFromList.UseVisualStyleBackColor = true;
+            this.btnAddPlayerFromList.Click += new System.EventHandler(this.btnAddPlayerFromList_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1181, 668);
+            this.Controls.Add(this.btnAddPlayerFromList);
+            this.Controls.Add(this.btnAddTeam);
+            this.Controls.Add(this.lbxPlayersToAdd);
+            this.Controls.Add(this.tbxStadName);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.tbxTeamName);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnMatch);
             this.Controls.Add(this.lbxEnemyTeam);
             this.Controls.Add(this.cbxPosition);
@@ -182,6 +257,13 @@
         private System.Windows.Forms.ComboBox cbxPosition;
         private System.Windows.Forms.ListBox lbxEnemyTeam;
         private System.Windows.Forms.Button btnMatch;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox tbxTeamName;
+        private System.Windows.Forms.TextBox tbxStadName;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ListBox lbxPlayersToAdd;
+        private System.Windows.Forms.Button btnAddTeam;
+        private System.Windows.Forms.Button btnAddPlayerFromList;
     }
 }
 
