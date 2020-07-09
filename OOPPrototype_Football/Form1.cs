@@ -15,6 +15,8 @@ namespace OOPPrototype_Football
     public partial class Form1 : Form
     {
         Player _currentPlayer;
+        Team _currentTeam;
+        Team _currentEnemyTeam;
 
         public Form1()
         {
@@ -27,7 +29,17 @@ namespace OOPPrototype_Football
             Player sabri = new Defender { Name = "Sabri Sarıoğlu", BirthDate = DateTime.Now };
             Player emre = new MidFielder { Name = "Emre Belözoğlu", BirthDate = DateTime.Now };
             Player ronaldo = new Striker { Name = "Cristiano Ronaldo", BirthDate = DateTime.Now };
-            
+
+            List<Player> gsPlayers = new List<Player> { muslera, sabri };
+            List<Player> fbPlayers = new List<Player> { emre, ronaldo };
+            Team gs = new Team { Name = "Galatasaray", Players = gsPlayers, Stadium = "TT Arena" };
+            Team fb = new Team { Name = "Fenerbahçe", Players = fbPlayers, Stadium = "Şükrü Saraçoğlu" };
+
+            lbxEnemyTeam.Items.Add(gs);
+            lbxEnemyTeam.Items.Add(fb);
+
+            lbxTeams.Items.Add(gs);
+            lbxTeams.Items.Add(fb);
 
             lbxPlayers.Items.Add(muslera);
             lbxPlayers.Items.Add(sabri);
@@ -40,6 +52,8 @@ namespace OOPPrototype_Football
             cbxPosition.Items.Add("Striker");
 
             _currentPlayer = (Player)lbxPlayers.Items[0];
+            _currentTeam = (Team)lbxTeams.Items[0];
+            _currentEnemyTeam = (Team)lbxEnemyTeam.Items[0];
         }
 
         private void btnShoot_Click(object sender, EventArgs e)
@@ -103,6 +117,21 @@ namespace OOPPrototype_Football
                 Player player = new Striker { Name = tbxPlayerName.Text, BirthDate = DateTime.Now };
                 lbxPlayers.Items.Add(player);
             }
+        }
+
+        private void lbxTeams_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _currentTeam = (Team)lbxTeams.SelectedItem;
+        }
+
+        private void lbxEnemyTeam_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _currentEnemyTeam = (Team)lbxEnemyTeam.SelectedItem;
+        }
+
+        private void btnMatch_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(_currentTeam.Play(_currentEnemyTeam));
         }
     }
 }

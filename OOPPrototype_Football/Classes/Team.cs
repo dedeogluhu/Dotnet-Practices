@@ -13,7 +13,7 @@ namespace OOPPrototype_Football.Classes
         public List<Player> Players { get; set; }
         public string Play(Team team)
         {
-            return $"Playing a Game with {team}";
+            return $"{Name} Playing a Game with {team.Name}";
         }
         public override string ToString()
         {

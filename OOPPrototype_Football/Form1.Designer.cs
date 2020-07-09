@@ -38,6 +38,7 @@
             this.btnAddPlayer = new System.Windows.Forms.Button();
             this.cbxPosition = new System.Windows.Forms.ComboBox();
             this.lbxEnemyTeam = new System.Windows.Forms.ListBox();
+            this.btnMatch = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnShoot
@@ -88,6 +89,7 @@
             this.lbxTeams.Name = "lbxTeams";
             this.lbxTeams.Size = new System.Drawing.Size(347, 276);
             this.lbxTeams.TabIndex = 4;
+            this.lbxTeams.SelectedIndexChanged += new System.EventHandler(this.lbxTeams_SelectedIndexChanged);
             // 
             // tbxPlayerName
             // 
@@ -131,12 +133,24 @@
             this.lbxEnemyTeam.Name = "lbxEnemyTeam";
             this.lbxEnemyTeam.Size = new System.Drawing.Size(356, 276);
             this.lbxEnemyTeam.TabIndex = 9;
+            this.lbxEnemyTeam.SelectedIndexChanged += new System.EventHandler(this.lbxEnemyTeam_SelectedIndexChanged);
+            // 
+            // btnMatch
+            // 
+            this.btnMatch.Location = new System.Drawing.Point(1038, 305);
+            this.btnMatch.Name = "btnMatch";
+            this.btnMatch.Size = new System.Drawing.Size(131, 60);
+            this.btnMatch.TabIndex = 10;
+            this.btnMatch.Text = "Match";
+            this.btnMatch.UseVisualStyleBackColor = true;
+            this.btnMatch.Click += new System.EventHandler(this.btnMatch_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1181, 668);
+            this.Controls.Add(this.btnMatch);
             this.Controls.Add(this.lbxEnemyTeam);
             this.Controls.Add(this.cbxPosition);
             this.Controls.Add(this.btnAddPlayer);
@@ -167,6 +181,7 @@
         private System.Windows.Forms.Button btnAddPlayer;
         private System.Windows.Forms.ComboBox cbxPosition;
         private System.Windows.Forms.ListBox lbxEnemyTeam;
+        private System.Windows.Forms.Button btnMatch;
     }
 }
 
