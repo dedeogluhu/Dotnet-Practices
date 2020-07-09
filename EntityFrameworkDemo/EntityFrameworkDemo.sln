@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPPrototype_Basketball", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPPrototype_Fps", "..\OOPPrototype_Fps\OOPPrototype_Fps.csproj", "{186ED119-C52D-40E5-B507-4D0B06FD6AC2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPPrototype_Football", "..\OOPPrototype_Football\OOPPrototype_Football.csproj", "{0195F954-E181-4229-88A0-6010024D97F6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{186ED119-C52D-40E5-B507-4D0B06FD6AC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{186ED119-C52D-40E5-B507-4D0B06FD6AC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{186ED119-C52D-40E5-B507-4D0B06FD6AC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0195F954-E181-4229-88A0-6010024D97F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0195F954-E181-4229-88A0-6010024D97F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0195F954-E181-4229-88A0-6010024D97F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0195F954-E181-4229-88A0-6010024D97F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
