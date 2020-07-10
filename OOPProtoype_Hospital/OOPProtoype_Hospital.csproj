@@ -46,15 +46,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Appointments\Appointment.cs" />
+    <Compile Include="Appointments\AppointmentManager.cs" />
+    <Compile Include="Enums\Enums.cs" />
+    <Compile Include="System\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="System\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="Patients\Patient.cs" />
+    <Compile Include="System\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
+    <Compile Include="Servants\Doctor.cs" />
+    <Compile Include="Servants\Nurse.cs" />
+    <Compile Include="Servants\Servant.cs" />
+    <EmbeddedResource Include="System\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -77,11 +84,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="System\App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Appointments\" />
-    <Folder Include="Servants\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
