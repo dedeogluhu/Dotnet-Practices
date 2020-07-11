@@ -46,15 +46,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Characters\Archer.cs" />
+    <Compile Include="Characters\Character.cs" />
+    <Compile Include="Characters\Mage.cs" />
+    <Compile Include="Characters\Warrior.cs" />
+    <Compile Include="Spells\ChargedHit.cs" />
+    <Compile Include="Spells\Fireball.cs" />
+    <Compile Include="Spells\Spell.cs" />
+    <Compile Include="Spells\TripleShot.cs" />
+    <Compile Include="WeaponInterfaces\ICloseRange.cs" />
+    <Compile Include="WeaponInterfaces\ILongRange.cs" />
+    <Compile Include="WeaponInterfaces\IMagical.cs" />
+    <Compile Include="System\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="System\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="System\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
+    <Compile Include="Weapons\Bow.cs" />
+    <Compile Include="Weapons\Staff.cs" />
+    <Compile Include="Weapons\Sword.cs" />
+    <Compile Include="Weapons\Weapon.cs" />
+    <EmbeddedResource Include="System\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -77,7 +92,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="System\App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
