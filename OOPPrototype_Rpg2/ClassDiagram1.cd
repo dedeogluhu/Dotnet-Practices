@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="OOPPrototype_Rpg2.Characters.Archer" Collapsed="true">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Characters\Archer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OOPPrototype_Rpg2.Characters.Character" Collapsed="true">
+    <Position X="2.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAEAAAEABAAAAQAAIAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Characters\Character.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OOPPrototype_Rpg2.Characters.Mage" Collapsed="true">
+    <Position X="2.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Characters\Mage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OOPPrototype_Rpg2.Characters.Warrior" Collapsed="true">
+    <Position X="5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Characters\Warrior.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OOPPrototype_Rpg2.Properties.Resources" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OOPPrototype_Rpg2.Properties.Settings" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OOPPrototype_Rpg2.Spells.ChargedHit" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Spells\ChargedHit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OOPPrototype_Rpg2.Spells.Fireball" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Spells\Fireball.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OOPPrototype_Rpg2.Spells.Spell" Collapsed="true">
+    <Position X="2.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAECAAAAAQAAEAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Spells\Spell.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OOPPrototype_Rpg2.Spells.TripleShot" Collapsed="true">
+    <Position X="5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Spells\TripleShot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OOPPrototype_Rpg2.Form1" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CYAAAAACBCCIABAAAACAAAUCAIAAAQAAAAQAAAAACAA=</HashCode>
+      <FileName>System\Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OOPPrototype_Rpg2.Program" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>System\Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OOPPrototype_Rpg2.Weapons.Bow" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAACAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Weapons\Bow.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OOPPrototype_Rpg2.Weapons.Staff" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Weapons\Staff.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OOPPrototype_Rpg2.Weapons.Sword" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Weapons\Sword.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OOPPrototype_Rpg2.Weapons.Weapon" Collapsed="true">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAEAAAAAAQAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Weapons\Weapon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="OOPPrototype_Rpg2.Interfaces.ICloseRange" Collapsed="true">
+    <Position X="7.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WeaponInterfaces\ICloseRange.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="OOPPrototype_Rpg2.Interfaces.ILongRange" Collapsed="true">
+    <Position X="9.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WeaponInterfaces\ILongRange.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="OOPPrototype_Rpg2.Interfaces.IMagical" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WeaponInterfaces\IMagical.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
