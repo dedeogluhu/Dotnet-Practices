@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPPrototype_Football", "..
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPProtoype_Hospital", "..\OOPProtoype_Hospital\OOPProtoype_Hospital.csproj", "{0F0EFA09-36D4-4F63-978A-84A34238F80C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPPrototype_Rpg2", "..\OOPPrototype_Rpg2\OOPPrototype_Rpg2.csproj", "{63B543E0-4241-4D33-B047-34546B5EED79}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{0F0EFA09-36D4-4F63-978A-84A34238F80C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F0EFA09-36D4-4F63-978A-84A34238F80C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F0EFA09-36D4-4F63-978A-84A34238F80C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63B543E0-4241-4D33-B047-34546B5EED79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63B543E0-4241-4D33-B047-34546B5EED79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63B543E0-4241-4D33-B047-34546B5EED79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63B543E0-4241-4D33-B047-34546B5EED79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
