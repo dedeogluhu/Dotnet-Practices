@@ -158,6 +158,7 @@
             this.btnGetPayment.TabIndex = 1;
             this.btnGetPayment.Text = "Get Payment";
             this.btnGetPayment.UseVisualStyleBackColor = true;
+            this.btnGetPayment.Click += new System.EventHandler(this.btnGetPayment_Click);
             // 
             // lbxTableListForPayment
             // 
@@ -187,6 +188,7 @@
             this.btnOrderReady.TabIndex = 1;
             this.btnOrderReady.Text = "Order Ready";
             this.btnOrderReady.UseVisualStyleBackColor = true;
+            this.btnOrderReady.Click += new System.EventHandler(this.btnOrderReady_Click);
             // 
             // lbxOrderListForCook
             // 

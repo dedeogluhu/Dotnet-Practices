@@ -12,7 +12,7 @@
 
         public override string ToString()
         {
-            return $"{TableNo} - {TotalFee}";
+            return $"{TableNo} - {TotalFee}$";
         }
     }
 }

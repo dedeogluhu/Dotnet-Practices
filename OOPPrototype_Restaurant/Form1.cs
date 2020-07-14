@@ -72,8 +72,44 @@ namespace OOPPrototype_Restaurant
 
         private void btnOrderFood_Click(object sender, EventArgs e)
         {
+            Table table1 = (Table)cbxTableNo.SelectedItem;
+
+            lbxTableListForPayment.Items.Remove(table1);
+
+            Table table = new Table
+            {
+                TableNo = table1.TableNo,
+                TotalFee = Convert.ToInt32(lblTotalAmount.Text)
+            };
+
+            lbxTableListForPayment.Items.Add(table);
+
+            foreach (Food item in lbxFoodToOrder.Items)
+            {
+                lbxOrderListForCook.Items.Add(item);
+            }
+
+            lbxFoodToOrder.Items.Clear();
+            lblTotalAmount.Text = "0";
+
+           
+
             
         }
 
+        private void btnGetPayment_Click(object sender, EventArgs e)
+        {
+            Table table = (Table)lbxTableListForPayment.SelectedItem;
+            MessageBox.Show($"{table.TotalFee}$ Payment");
+            table.Payment();
+            lbxTableListForPayment.Items.Remove(table);
+            lbxTableListForPayment.Items.Add(table);
+        }
+
+        private void btnOrderReady_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($"{lbxOrderListForCook.SelectedItem} is Ready!");
+            lbxOrderListForCook.Items.Remove(lbxOrderListForCook.SelectedItem);
+        }
     }
 }
