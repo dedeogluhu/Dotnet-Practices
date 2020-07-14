@@ -41,13 +41,11 @@ namespace OOPPrototype_Restaurant
                 TableNo = "1",
                 TotalFee = 0
             };
-
             Table table2 = new Table
             {
                 TableNo = "2",
                 TotalFee = 0
             };
-
             Table table3 = new Table
             {
                 TableNo = "3",
@@ -59,7 +57,7 @@ namespace OOPPrototype_Restaurant
 
             lbxMenu.Items.AddRange(foods.ToArray());
             cbxTableNo.Items.AddRange(tables.ToArray());
-            lbxTableList.Items.AddRange(tables.ToArray());
+            lbxTableListForPayment.Items.AddRange(tables.ToArray());
 
 
         }
@@ -74,40 +72,8 @@ namespace OOPPrototype_Restaurant
 
         private void btnOrderFood_Click(object sender, EventArgs e)
         {
-            List<Food> foodList = new List<Food>();
-
-            foreach (Food item in lbxFoodToOrder.Items)
-            {
-                foodList.Add(item);
-            }
-
-            Order order = new Order
-            {
-                Foods = foodList,
-                TotalPrice = Convert.ToInt32(lblTotalAmount.Text),
-                Table = (Table)cbxTableNo.SelectedItem,
-            };
-
-            lbxTableList.Items.Add(order);
-            lbxFoodToOrder.Items.Clear();
-            lblTotalAmount.Text = "0";
-
-            foreach (Food food in lbxFoodToOrder.Items)
-            {
-                lbxOrderList.Items.Add(food.Name);
-            }
-        }
-
-        private void btnGetPayment_Click(object sender, EventArgs e)
-        {
-            Order order = (Order)lbxTableList.SelectedItem;
-            order.Table.Payment();
-        }
-
-        private void btnOrderReady_Click(object sender, EventArgs e)
-        {
-            lbxOrderList.Items.Remove(lbxOrderList.SelectedItem);
             
         }
+
     }
 }
