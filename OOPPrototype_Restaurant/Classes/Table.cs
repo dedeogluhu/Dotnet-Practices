@@ -4,6 +4,7 @@
     {
         public string TableNo { get; set; }
         public int TotalFee { get; set; }
+        public Worker Waiter { get; set; }
 
         public void Payment()
         {
@@ -12,7 +13,7 @@
 
         public override string ToString()
         {
-            return $"{TableNo} - {TotalFee}$";
+            return $"Table {TableNo} - {TotalFee}$ - {Waiter?.Name}";
         }
     }
 }

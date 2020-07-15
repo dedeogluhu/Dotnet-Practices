@@ -7,7 +7,6 @@ namespace OOPPrototype_Restaurant.Classes
         public List<Food> Foods { get; set; }
         public Table Table { get; set; }
         public int TotalPrice { get; set; }
-
         public override string ToString()
         {
             string a = "";

@@ -49,6 +49,7 @@
     <Compile Include="Classes\Food.cs" />
     <Compile Include="Classes\Order.cs" />
     <Compile Include="Classes\Table.cs" />
+    <Compile Include="Classes\Worker.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

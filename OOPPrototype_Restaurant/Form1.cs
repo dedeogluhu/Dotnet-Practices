@@ -13,6 +13,8 @@ namespace OOPPrototype_Restaurant
 {
     public partial class Form1 : Form
     {
+        List<Worker> workers;
+
         public Form1()
         {
             InitializeComponent();
@@ -52,9 +54,15 @@ namespace OOPPrototype_Restaurant
                 TotalFee = 0
             };
 
+            Worker worker1 = new Worker { Name = "Ali", Age = 20, Wage = 100 };
+            Worker worker2 = new Worker { Name = "Ayşe", Age = 25, Wage = 80 };
+            Worker worker3 = new Worker { Name = "Aylin", Age = 21, Wage = 120 };
+
+            workers = new List<Worker> { worker1, worker2, worker3 };
             List<Table> tables = new List<Table> { table1, table2, table3 };
             List<Food> foods = new List<Food> { pilav, kuruFasulye, corba };
 
+            lbxWorkers.Items.AddRange(workers.ToArray());
             lbxMenu.Items.AddRange(foods.ToArray());
             cbxTableNo.Items.AddRange(tables.ToArray());
             lbxTableListForPayment.Items.AddRange(tables.ToArray());
@@ -76,10 +84,15 @@ namespace OOPPrototype_Restaurant
 
             lbxTableListForPayment.Items.Remove(table1);
 
+            Random random = new Random();
+
+            int index = random.Next(workers.Count);
+
             Table table = new Table
             {
                 TableNo = table1.TableNo,
-                TotalFee = Convert.ToInt32(lblTotalAmount.Text)
+                TotalFee = Convert.ToInt32(lblTotalAmount.Text),
+                Waiter = workers[index]
             };
 
             lbxTableListForPayment.Items.Add(table);
@@ -91,15 +104,14 @@ namespace OOPPrototype_Restaurant
 
             lbxFoodToOrder.Items.Clear();
             lblTotalAmount.Text = "0";
-
-           
-
-            
+ 
         }
 
         private void btnGetPayment_Click(object sender, EventArgs e)
         {
             Table table = (Table)lbxTableListForPayment.SelectedItem;
+            lbxOldOrders.Items.Add(table);
+            lblShowCash.Text = (Convert.ToInt32(lblShowCash.Text) + table.TotalFee).ToString();
             MessageBox.Show($"{table.TotalFee}$ Payment");
             table.Payment();
             lbxTableListForPayment.Items.Remove(table);
@@ -110,6 +122,12 @@ namespace OOPPrototype_Restaurant
         {
             MessageBox.Show($"{lbxOrderListForCook.SelectedItem} is Ready!");
             lbxOrderListForCook.Items.Remove(lbxOrderListForCook.SelectedItem);
+        }
+
+        private void btnWithdrawCash_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($"{lblShowCash.Text}$ Withdraw..");
+            lblShowCash.Text = "0";
         }
     }
 }

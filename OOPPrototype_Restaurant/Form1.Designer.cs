@@ -43,9 +43,18 @@
             this.gbxOrderList = new System.Windows.Forms.GroupBox();
             this.btnOrderReady = new System.Windows.Forms.Button();
             this.lbxOrderListForCook = new System.Windows.Forms.ListBox();
+            this.gbxOldOrders = new System.Windows.Forms.GroupBox();
+            this.lblShowCash = new System.Windows.Forms.Label();
+            this.lblCash = new System.Windows.Forms.Label();
+            this.btnWithdrawCash = new System.Windows.Forms.Button();
+            this.lbxOldOrders = new System.Windows.Forms.ListBox();
+            this.gbxWorkersList = new System.Windows.Forms.GroupBox();
+            this.lbxWorkers = new System.Windows.Forms.ListBox();
             this.gbxOrderFood.SuspendLayout();
             this.gbxTableList.SuspendLayout();
             this.gbxOrderList.SuspendLayout();
+            this.gbxOldOrders.SuspendLayout();
+            this.gbxWorkersList.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbxOrderFood
@@ -178,7 +187,7 @@
             this.gbxOrderList.Size = new System.Drawing.Size(582, 311);
             this.gbxOrderList.TabIndex = 2;
             this.gbxOrderList.TabStop = false;
-            this.gbxOrderList.Text = "Order List";
+            this.gbxOrderList.Text = "Order List For Cook";
             // 
             // btnOrderReady
             // 
@@ -199,21 +208,95 @@
             this.lbxOrderListForCook.Size = new System.Drawing.Size(569, 228);
             this.lbxOrderListForCook.TabIndex = 0;
             // 
+            // gbxOldOrders
+            // 
+            this.gbxOldOrders.Controls.Add(this.lblShowCash);
+            this.gbxOldOrders.Controls.Add(this.lblCash);
+            this.gbxOldOrders.Controls.Add(this.btnWithdrawCash);
+            this.gbxOldOrders.Controls.Add(this.lbxOldOrders);
+            this.gbxOldOrders.Location = new System.Drawing.Point(1155, 13);
+            this.gbxOldOrders.Name = "gbxOldOrders";
+            this.gbxOldOrders.Size = new System.Drawing.Size(343, 321);
+            this.gbxOldOrders.TabIndex = 3;
+            this.gbxOldOrders.TabStop = false;
+            this.gbxOldOrders.Text = "Old Orders";
+            // 
+            // lblShowCash
+            // 
+            this.lblShowCash.AutoSize = true;
+            this.lblShowCash.Location = new System.Drawing.Point(113, 282);
+            this.lblShowCash.Name = "lblShowCash";
+            this.lblShowCash.Size = new System.Drawing.Size(16, 17);
+            this.lblShowCash.TabIndex = 3;
+            this.lblShowCash.Text = "0";
+            // 
+            // lblCash
+            // 
+            this.lblCash.AutoSize = true;
+            this.lblCash.Location = new System.Drawing.Point(7, 282);
+            this.lblCash.Name = "lblCash";
+            this.lblCash.Size = new System.Drawing.Size(44, 17);
+            this.lblCash.TabIndex = 2;
+            this.lblCash.Text = "Cash:";
+            // 
+            // btnWithdrawCash
+            // 
+            this.btnWithdrawCash.Location = new System.Drawing.Point(181, 271);
+            this.btnWithdrawCash.Name = "btnWithdrawCash";
+            this.btnWithdrawCash.Size = new System.Drawing.Size(156, 43);
+            this.btnWithdrawCash.TabIndex = 1;
+            this.btnWithdrawCash.Text = "Withdraw Money";
+            this.btnWithdrawCash.UseVisualStyleBackColor = true;
+            this.btnWithdrawCash.Click += new System.EventHandler(this.btnWithdrawCash_Click);
+            // 
+            // lbxOldOrders
+            // 
+            this.lbxOldOrders.FormattingEnabled = true;
+            this.lbxOldOrders.ItemHeight = 16;
+            this.lbxOldOrders.Location = new System.Drawing.Point(10, 21);
+            this.lbxOldOrders.Name = "lbxOldOrders";
+            this.lbxOldOrders.Size = new System.Drawing.Size(327, 244);
+            this.lbxOldOrders.TabIndex = 0;
+            // 
+            // gbxWorkersList
+            // 
+            this.gbxWorkersList.Controls.Add(this.lbxWorkers);
+            this.gbxWorkersList.Location = new System.Drawing.Point(1155, 341);
+            this.gbxWorkersList.Name = "gbxWorkersList";
+            this.gbxWorkersList.Size = new System.Drawing.Size(343, 310);
+            this.gbxWorkersList.TabIndex = 4;
+            this.gbxWorkersList.TabStop = false;
+            this.gbxWorkersList.Text = "Workers";
+            // 
+            // lbxWorkers
+            // 
+            this.lbxWorkers.FormattingEnabled = true;
+            this.lbxWorkers.ItemHeight = 16;
+            this.lbxWorkers.Location = new System.Drawing.Point(7, 21);
+            this.lbxWorkers.Name = "lbxWorkers";
+            this.lbxWorkers.Size = new System.Drawing.Size(330, 276);
+            this.lbxWorkers.TabIndex = 0;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1160, 663);
+            this.ClientSize = new System.Drawing.Size(1796, 733);
+            this.Controls.Add(this.gbxWorkersList);
+            this.Controls.Add(this.gbxOldOrders);
             this.Controls.Add(this.gbxOrderList);
             this.Controls.Add(this.gbxTableList);
             this.Controls.Add(this.gbxOrderFood);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Restaurant";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.gbxOrderFood.ResumeLayout(false);
             this.gbxOrderFood.PerformLayout();
             this.gbxTableList.ResumeLayout(false);
             this.gbxOrderList.ResumeLayout(false);
+            this.gbxOldOrders.ResumeLayout(false);
+            this.gbxOldOrders.PerformLayout();
+            this.gbxWorkersList.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -235,6 +318,13 @@
         private System.Windows.Forms.GroupBox gbxOrderList;
         private System.Windows.Forms.Button btnOrderReady;
         private System.Windows.Forms.ListBox lbxOrderListForCook;
+        private System.Windows.Forms.GroupBox gbxOldOrders;
+        private System.Windows.Forms.Label lblShowCash;
+        private System.Windows.Forms.Label lblCash;
+        private System.Windows.Forms.Button btnWithdrawCash;
+        private System.Windows.Forms.ListBox lbxOldOrders;
+        private System.Windows.Forms.GroupBox gbxWorkersList;
+        private System.Windows.Forms.ListBox lbxWorkers;
     }
 }
 
