@@ -50,6 +50,8 @@
             this.lbxOldOrders = new System.Windows.Forms.ListBox();
             this.gbxWorkersList = new System.Windows.Forms.GroupBox();
             this.lbxWorkers = new System.Windows.Forms.ListBox();
+            this.btnAddWorker = new System.Windows.Forms.Button();
+            this.btnRemoveWorker = new System.Windows.Forms.Button();
             this.gbxOrderFood.SuspendLayout();
             this.gbxTableList.SuspendLayout();
             this.gbxOrderList.SuspendLayout();
@@ -260,6 +262,8 @@
             // 
             // gbxWorkersList
             // 
+            this.gbxWorkersList.Controls.Add(this.btnRemoveWorker);
+            this.gbxWorkersList.Controls.Add(this.btnAddWorker);
             this.gbxWorkersList.Controls.Add(this.lbxWorkers);
             this.gbxWorkersList.Location = new System.Drawing.Point(1155, 341);
             this.gbxWorkersList.Name = "gbxWorkersList";
@@ -274,14 +278,34 @@
             this.lbxWorkers.ItemHeight = 16;
             this.lbxWorkers.Location = new System.Drawing.Point(7, 21);
             this.lbxWorkers.Name = "lbxWorkers";
-            this.lbxWorkers.Size = new System.Drawing.Size(330, 276);
+            this.lbxWorkers.Size = new System.Drawing.Size(330, 228);
             this.lbxWorkers.TabIndex = 0;
+            // 
+            // btnAddWorker
+            // 
+            this.btnAddWorker.Location = new System.Drawing.Point(10, 256);
+            this.btnAddWorker.Name = "btnAddWorker";
+            this.btnAddWorker.Size = new System.Drawing.Size(162, 48);
+            this.btnAddWorker.TabIndex = 1;
+            this.btnAddWorker.Text = "Add a Worker";
+            this.btnAddWorker.UseVisualStyleBackColor = true;
+            this.btnAddWorker.Click += new System.EventHandler(this.btnAddWorker_Click);
+            // 
+            // btnRemoveWorker
+            // 
+            this.btnRemoveWorker.Location = new System.Drawing.Point(178, 256);
+            this.btnRemoveWorker.Name = "btnRemoveWorker";
+            this.btnRemoveWorker.Size = new System.Drawing.Size(159, 48);
+            this.btnRemoveWorker.TabIndex = 2;
+            this.btnRemoveWorker.Text = "Remove Worker";
+            this.btnRemoveWorker.UseVisualStyleBackColor = true;
+            this.btnRemoveWorker.Click += new System.EventHandler(this.btnRemoveWorker_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1796, 733);
+            this.ClientSize = new System.Drawing.Size(1523, 671);
             this.Controls.Add(this.gbxWorkersList);
             this.Controls.Add(this.gbxOldOrders);
             this.Controls.Add(this.gbxOrderList);
@@ -289,6 +313,7 @@
             this.Controls.Add(this.gbxOrderFood);
             this.Name = "Form1";
             this.Text = "Restaurant";
+            this.Activated += new System.EventHandler(this.Form1_Activated);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.gbxOrderFood.ResumeLayout(false);
             this.gbxOrderFood.PerformLayout();
@@ -325,6 +350,8 @@
         private System.Windows.Forms.ListBox lbxOldOrders;
         private System.Windows.Forms.GroupBox gbxWorkersList;
         private System.Windows.Forms.ListBox lbxWorkers;
+        private System.Windows.Forms.Button btnAddWorker;
+        private System.Windows.Forms.Button btnRemoveWorker;
     }
 }
 

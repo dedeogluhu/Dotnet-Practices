@@ -14,6 +14,12 @@ namespace OOPPrototype_Restaurant
     public partial class Form1 : Form
     {
         List<Worker> workers;
+        static List<Worker> workersToAdd;
+
+        public static void AddWorkers(Worker worker)
+        {
+            workersToAdd.Add(worker);
+        }
 
         public Form1()
         {
@@ -22,6 +28,8 @@ namespace OOPPrototype_Restaurant
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            workersToAdd = new List<Worker>();
+
             Food kuruFasulye = new Food
             {
                 Name = "Kuru Fasulye",
@@ -128,6 +136,23 @@ namespace OOPPrototype_Restaurant
         {
             MessageBox.Show($"{lblShowCash.Text}$ Withdraw..");
             lblShowCash.Text = "0";
+        }
+
+        private void btnAddWorker_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.Show();
+        }
+
+        private void Form1_Activated(object sender, EventArgs e)
+        {
+            lbxWorkers.Items.AddRange(workersToAdd.ToArray());
+            workersToAdd.Clear();
+        }
+
+        private void btnRemoveWorker_Click(object sender, EventArgs e)
+        {
+            lbxWorkers.Items.Remove(lbxWorkers.SelectedItem);
         }
     }
 }
