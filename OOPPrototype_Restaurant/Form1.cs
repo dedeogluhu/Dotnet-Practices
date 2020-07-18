@@ -15,6 +15,7 @@ namespace OOPPrototype_Restaurant
     {
         List<Worker> workers;
         Form2 form2;
+        bool isFormShown = false;
         //static List<Worker> workersToAdd;
 
 
@@ -145,9 +146,19 @@ namespace OOPPrototype_Restaurant
 
         private void btnAddWorker_Click(object sender, EventArgs e)
         {
-            form2.Show();       
+            if (isFormShown == false)
+            {
+                form2.Show();
+
+                form2.AddWorkerEvent += AddWorkers;
+
+                isFormShown = true;
+            }
+            else if (isFormShown == true)
+            {
+                isFormShown = false;
+            }
             
-            form2.AddWorkerEvent += AddWorkers;
         }
 
         private void Form1_Activated(object sender, EventArgs e)
