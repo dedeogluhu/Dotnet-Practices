@@ -14,11 +14,15 @@ namespace OOPPrototype_Restaurant
     public partial class Form1 : Form
     {
         List<Worker> workers;
-        static List<Worker> workersToAdd;
+        Form2 form2;
+        //static List<Worker> workersToAdd;
 
-        public static void AddWorkers(Worker worker)
+
+        public void AddWorkers(Worker worker)
         {
-            workersToAdd.Add(worker);
+            //workersToAdd.Add(worker);
+            workers.Add(worker);
+            lbxWorkers.Items.Add(worker);
         }
 
         public Form1()
@@ -28,7 +32,8 @@ namespace OOPPrototype_Restaurant
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            workersToAdd = new List<Worker>();
+            //workersToAdd = new List<Worker>();
+            form2 = new Form2();
 
             Food kuruFasulye = new Food
             {
@@ -140,14 +145,16 @@ namespace OOPPrototype_Restaurant
 
         private void btnAddWorker_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
-            form2.Show();
+            form2.Show();       
+            
+            form2.AddWorkerEvent += AddWorkers;
         }
 
         private void Form1_Activated(object sender, EventArgs e)
         {
-            lbxWorkers.Items.AddRange(workersToAdd.ToArray());
-            workersToAdd.Clear();
+            //lbxWorkers.Items.AddRange(workersToAdd.ToArray());
+            //workersToAdd.Clear();
+            form2.AddWorkerEvent -= AddWorkers;
         }
 
         private void btnRemoveWorker_Click(object sender, EventArgs e)

@@ -13,6 +13,8 @@ namespace OOPPrototype_Restaurant
 {
     public partial class Form2 : Form
     {
+        public delegate void AddWorkerDelegate(Worker worker);
+        public event AddWorkerDelegate AddWorkerEvent;
         public Form2()
         {
             InitializeComponent();
@@ -27,7 +29,9 @@ namespace OOPPrototype_Restaurant
                 Wage = Convert.ToInt32(tbxWorkerWage.Text)
             };
 
-            Form1.AddWorkers(worker);
+            //Form1.AddWorkers(worker);
+
+            AddWorkerEvent?.Invoke(worker);
 
             MessageBox.Show("Worker Added");
         }
