@@ -1,4 +1,4 @@
-# Practise Repo!!
+# Practise Repo
 
 This was one of my private practise repos. I wanted to make it public but can't remember what they do or how to use.
 
